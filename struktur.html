@@ -16,14 +16,43 @@
             flex-wrap: wrap;
         }
 
-        .struktur-card.wali-kelas {
+        .struktur-card.wali-kelas, .struktur-card.bendahara {
             width: 100%;
-            max-width: 400px; /* Batasi lebar kartu wali kelas */
+            max-width: 400px;
         }
 
-        .struktur-card.kepengurusan {
+        .struktur-card.ketua, .struktur-card.sekretaris {
             width: 100%;
-            max-width: 400px; /* Batasi lebar kartu kepengurusan */
+            max-width: 400px;
+        }
+
+        /* Pemberian warna berdasarkan gender */
+        .wali-kelas.perempuan .struktur-card-role,
+        .wali-kelas.perempuan .struktur-card-name,
+        .sekretaris.perempuan .struktur-card-role,
+        .sekretaris.perempuan .struktur-card-name,
+        .bendahara.perempuan .struktur-card-role,
+        .bendahara.perempuan .struktur-card-name {
+            color: #d81b60; /* Warna pink untuk perempuan */
+        }
+        
+        .ketua.laki-laki .struktur-card-role,
+        .ketua.laki-laki .struktur-card-name {
+            color: #007bff; /* Warna biru untuk laki-laki */
+        }
+        
+        /* Kartu dengan warna pink */
+        .wali-kelas.perempuan, 
+        .sekretaris.perempuan, 
+        .bendahara.perempuan {
+            border: 2px solid #f48fb1;
+            background-color: #fce4ec;
+        }
+
+        /* Kartu dengan warna biru */
+        .ketua.laki-laki {
+            border: 2px solid #90caf9;
+            background-color: #e3f2fd;
         }
     </style>
 </head>
@@ -34,8 +63,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Beranda</a></li>
+                <li><a href="jadwal.html">Jadwal</a></li>
                 <li><a href="struktur.html" class="active">Struktur Kelas</a></li>
-                <li><a href="jadwal.html">Jadwal Mapel</a></li>
             </ul>
         </nav>
     </header>
@@ -45,36 +74,36 @@
             <h2>Struktur Organisasi Kelas</h2>
             
             <div class="struktur-row">
-                <div class="struktur-card wali-kelas">
+                <div class="struktur-card wali-kelas perempuan">
                     <p class="struktur-card-role">Wali Kelas</p>
                     <p class="struktur-card-name">Alia Lolobulan</p>
                 </div>
             </div>
 
             <div class="struktur-row">
-                <div class="struktur-card kepengurusan">
+                <div class="struktur-card ketua laki-laki">
                     <p class="struktur-card-role">Ketua Kelas</p>
                     <p class="struktur-card-name">Adiv Buja</p>
                 </div>
-                <div class="struktur-card kepengurusan">
+                <div class="struktur-card ketua laki-laki">
                     <p class="struktur-card-role">Wakil Ketua</p>
                     <p class="struktur-card-name">Rasyad Maulana</p>
                 </div>
             </div>
 
             <div class="struktur-row">
-                <div class="struktur-card kepengurusan">
+                <div class="struktur-card sekretaris perempuan">
                     <p class="struktur-card-role">Sekretaris</p>
                     <p class="struktur-card-name">Najwa Syihab</p>
                 </div>
-                <div class="struktur-card kepengurusan">
+                <div class="struktur-card sekretaris perempuan">
                     <p class="struktur-card-role">Wakil Sekretaris</p>
                     <p class="struktur-card-name">Haura Khansa</p>
                 </div>
             </div>
 
             <div class="struktur-row">
-                <div class="struktur-card kepengurusan">
+                <div class="struktur-card bendahara perempuan">
                     <p class="struktur-card-role">Bendahara</p>
                     <p class="struktur-card-name">Andi Keira Azzalea</p>
                 </div>
