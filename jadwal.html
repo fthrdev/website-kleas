@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas Bougainvillea - Jadwal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Gaya tambahan khusus untuk halaman jadwal */
+        .jadwal-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .jadwal-item {
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            box-shadow: var(--box-shadow);
+            transition: transform var(--transition-speed);
+        }
+
+        .jadwal-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .jadwal-item h3 {
+            margin-bottom: 10px;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        .mapel-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .mapel-list li {
+            background-color: var(--background-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            .jadwal-item {
+                padding: 15px;
+            }
+            .mapel-list {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="logo">Bougainvillea</span>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="jadwal.html" class="active">Jadwal</a></li>
+                <li><a href="struktur.html">Struktur Kelas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Jadwal Mata Pelajaran</h2>
+            <ul class="jadwal-list">
+                <li class="jadwal-item">
+                    <h3>Senin</h3>
+                    <ul class="mapel-list">
+                        <li>PJOK</li>
+                        <li>PKN</li>
+                        <li>Matematika</li>
+                    </ul>
+                </li>
+                <li class="jadwal-item">
+                    <h3>Selasa</h3>
+                    <ul class="mapel-list">
+                        <li>Matematika</li>
+                        <li>Bhs. Indonesia</li>
+                        <li>Bhs Inggris</li>
+                        <li>IPA</li>
+                    </ul>
+                </li>
+                <li class="jadwal-item">
+                    <h3>Rabu</h3>
+                    <ul class="mapel-list">
+                        <li>IPA</li>
+                        <li>SBK</li>
+                        <li>PAI</li>
+                    </ul>
+                </li>
+                <li class="jadwal-item">
+                    <h3>Kamis</h3>
+                    <ul class="mapel-list">
+                        <li>IPS</li>
+                        <li>Bhs. Inggris</li>
+                        <li>Bhs. Indonesia</li>
+                        <li>TIK</li>
+                    </ul>
+                </li>
+                <li class="jadwal-item">
+                    <h3>Jumat</h3>
+                    <ul class="mapel-list">
+                        <li>IPS</li>
+                        <li>Bhs. Indonesia</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kelas Bougainvillea. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
