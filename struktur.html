@@ -6,6 +6,26 @@
     <title>Kelas Bougainvillea - Struktur Kelas</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Gaya tambahan khusus untuk halaman struktur.html */
+        .struktur-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .struktur-card.wali-kelas {
+            width: 100%;
+            max-width: 400px; /* Batasi lebar kartu wali kelas */
+        }
+
+        .struktur-card.kepengurusan {
+            width: 100%;
+            max-width: 400px; /* Batasi lebar kartu kepengurusan */
+        }
+    </style>
 </head>
 <body>
 
@@ -23,28 +43,38 @@
     <main class="container">
         <section>
             <h2>Struktur Organisasi Kelas</h2>
-            <div class="struktur-grid">
-                <div class="struktur-card">
+            
+            <div class="struktur-row">
+                <div class="struktur-card wali-kelas">
                     <p class="struktur-card-role">Wali Kelas</p>
                     <p class="struktur-card-name">Alia Lolobulan</p>
                 </div>
-                <div class="struktur-card">
+            </div>
+
+            <div class="struktur-row">
+                <div class="struktur-card kepengurusan">
                     <p class="struktur-card-role">Ketua Kelas</p>
                     <p class="struktur-card-name">Adiv Buja</p>
                 </div>
-                <div class="struktur-card">
+                <div class="struktur-card kepengurusan">
                     <p class="struktur-card-role">Wakil Ketua</p>
                     <p class="struktur-card-name">Rasyad Maulana</p>
                 </div>
-                <div class="struktur-card">
+            </div>
+
+            <div class="struktur-row">
+                <div class="struktur-card kepengurusan">
                     <p class="struktur-card-role">Sekretaris</p>
                     <p class="struktur-card-name">Najwa Syihab</p>
                 </div>
-                <div class="struktur-card">
+                <div class="struktur-card kepengurusan">
                     <p class="struktur-card-role">Wakil Sekretaris</p>
                     <p class="struktur-card-name">Haura Khansa</p>
                 </div>
-                <div class="struktur-card">
+            </div>
+
+            <div class="struktur-row">
+                <div class="struktur-card kepengurusan">
                     <p class="struktur-card-role">Bendahara</p>
                     <p class="struktur-card-name">Andi Keira Azzalea</p>
                 </div>
